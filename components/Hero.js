@@ -1,4 +1,4 @@
-import Link from 'next/link';
+
 
 export default function Hero() {
   return (
@@ -14,8 +14,8 @@ export default function Hero() {
       <h2 className="mt-3 max-w-md mx-auto text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-x-3xl">
         Build the eCommerce Revolution.
       </h2>
-      <div className="mt-5 max-w-md mx-auto flex justify-center items-center md:mt-8">
-        <Link href="#">
+      {/* <div className="mt-5 max-w-md mx-auto flex justify-center items-center md:mt-8">
+        <Link href="/products">
           <a className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium py-3 border-transparent rounded-md text-white bg-gray-900 hover:bg-gray-800">
             Shop Now
           </a>
@@ -25,7 +25,7 @@ export default function Hero() {
             Learn more
           </a>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 }
