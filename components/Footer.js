@@ -22,7 +22,10 @@ export default function Footer() {
           ))}
         </nav>
         <p className="mt-8 text-center text-gray-400">
-          &copy; 2022 Khoa Do. All right reserved.
+          All texts and images are owned by gymshark and used here for education purposes only.
+        </p>
+        <p className="mt-8 text-center text-gray-400">
+          Created By &copy; 2022 Khoa Do. All right reserved.
         </p>
       </div>
     </footer>

@@ -1,15 +1,13 @@
-import { getProductsInCollection } from '../lib/shopify';
-import ProductList from '../components/ProductList';
 import Hero from '../components/Hero';
 import Head from 'next/head';
 import Banner from '../components/Banner';
 import TwoColBanner from '../components/TwoColBanner';
 
-export default function Home({ products }) {
+export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>Headless Shopify</title>
+        <title>Headless Shopify with Next JS</title>
         <meta
           httpEquiv="Content-Type"
           content="text/html; charset=utf-8"
@@ -34,9 +32,3 @@ export default function Home({ products }) {
   );
 }
 
-export async function getStaticProps() {
-  const products = await getProductsInCollection();
-  return {
-    props: { products },
-  };
-}

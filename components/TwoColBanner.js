@@ -6,14 +6,14 @@ export default function TwoColBanner({title1, bgImg1, title2, bgImg2}) {
       <div className="w-[100%] flex pr-3" style={{ backgroundImage: `url(${bgImg1})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
         <div className='w-[100%] text-white flex flex-col justify-center items-end gap-3'>
             <h1 className='uppercase text-[36px] font-bold'>{title1}</h1>
-            <div><ShopButton /></div>
+            <div><ShopButton url="/collections/women" /></div>
         </div>
       </div>
 
       <div className="w-[100%] flex pl-3" style={{ backgroundImage: `url(${bgImg2})`, backgroundPosition: 'center', backgroundSize: 'cover' }}>
         <div className='text-white flex flex-col justify-center gap-3'>
             <h1 className='uppercase text-[36px] font-bold'>{title2}</h1>
-            <div><ShopButton /></div>
+            <div><ShopButton url="/collections/men" /></div>
         </div>
       </div>
     </div>
