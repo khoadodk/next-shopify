@@ -8,21 +8,23 @@ import { Autoplay, Navigation } from "swiper";
 
 export default function HeaderMessage({messages}) {
   return (
-    <div className="py-3 sm:px-[200px] px-[100px] text-center text-sm uppercase mx-auto border-b">
-      <Swiper 
-            spaceBetween={30}
-            centeredSlides={true}
-            autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-            }} 
-            navigation={true} 
-            modules={[Autoplay, Navigation]}
-        >
-            {messages.map(msg => {
-                return <SwiperSlide>{msg}</SwiperSlide>
-            })}
-      </Swiper>
+    <div className="py-3 px-4 text-center text-sm uppercase  border-b">
+      <div className="sm:w-1/2 mx-auto">
+          <Swiper 
+              spaceBetween={30}
+              centeredSlides={true}
+              autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
+              }} 
+              navigation={true} 
+              modules={[Autoplay, Navigation]}
+          >
+              {messages.map(msg => {
+                  return <SwiperSlide>{msg}</SwiperSlide>
+              })}
+        </Swiper>
+      </div>
     </div>
   );
 }

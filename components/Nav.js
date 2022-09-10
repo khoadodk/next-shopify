@@ -42,15 +42,14 @@ export default function Nav() {
 
         {/* Cart */}
         <a
-          className="text-md font-bold cursor-pointer"
+          className="relative text-md font-bold cursor-pointer"
           onClick={() => setCartOpen(!cartOpen)}
         >
           <Image 
             src="/icons/cart.svg"
             height="25"
             width="25"
-            className='relative'
-          /> <span className='absolute bottom-[15px] right-[25px] border rounded-full px-[6px] bg-blue-400 text-sm text-white'>{cartQuantity}</span>
+          /> <span className='absolute bottom-[-5px] left-[10px] border rounded-full px-[6px] bg-blue-400 text-sm text-white'>{cartQuantity}</span>
         </a>
         <MiniCart cart={cart} />
       </div>
