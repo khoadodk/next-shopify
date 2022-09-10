@@ -2,6 +2,7 @@ import Hero from '../components/Hero';
 import Head from 'next/head';
 import Banner from '../components/Banner';
 import TwoColBanner from '../components/TwoColBanner';
+import HeaderMessage from '../components/HeaderMessage';
 
 export default function Home() {
   return (
@@ -17,6 +18,10 @@ export default function Home() {
           content="text/html; charset=ISO-8859-1"
         />
       </Head>
+      <HeaderMessage messages = {["free returns within 30 days",
+          "10% student discount",
+          "new fall collections"
+      ]} />
       <Hero />
       <Banner title="STEP UP IN APEX" subtitle="The collection that keeps you cool, now with Gymshark ESNCETM anti-odour technology fabric" bgImg={"/images/banner1.webp"}  />
       <div className='pt-[50px]'>
