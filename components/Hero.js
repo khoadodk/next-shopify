@@ -4,7 +4,7 @@ import ShopButton from './ShopButton';
 
 export default function Hero() {
   return (
-      <div className="grid grid-cols-1 sm:grid-cols-2 h-[80vh] max-w-7xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 h-[80vh]">
         {/* Col 1 */}
         <div className='my-auto text-center'>
             <h1 className="font-extrabold text-gray-900">
